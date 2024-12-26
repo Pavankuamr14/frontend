@@ -1,0 +1,163 @@
+/* src/components/Login.css */
+.adminlogin-container * {
+    box-sizing: border-box;
+}
+
+.adminlogin-container body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.adminlogin-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.adminleft {
+    flex: 2; /* Left side takes more space */
+    background-color: #7469B6; /* Adjust background for contrast */
+    color: white; /* Set text color to white */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.adminright {
+    flex: 1.5; /* Right side takes less space */
+    background-color: #F5EFFF;
+    justify-content: space-between;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.adminlogo {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.adminlogin-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.adminlogin-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.adminpassword-container {
+    position: relative;
+    width: 100%;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+}
+
+#togglePassword.active {
+    color: #000;
+}
+
+.adminlogin-container button {
+    padding: 10px;
+    width: 100%;
+    background-color: #A594F9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.adminlogin-container button:hover {
+    background-color: #0056b3;
+}
+
+.adminforgot-link,
+.adminback-to-login {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.adminotp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.adminotp-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.adminbottom-imagee {
+    margin-top: auto;
+    width: 100%;
+    max-height: 200px;
+}
+
+@media (max-width: 768px) {
+    .adminlogin-container {
+        flex-direction: column;
+    }
+
+    .adminright {
+        display: none; /* Hide the right part on mobile */
+    }
+
+    .adminleft {
+        flex: 1; /* Adjust the left part to take full width */
+    }
+
+    .adminlogo {
+        width: 80px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .adminlogin-container h2 {
+        font-size: 24px;
+    }
+
+    .adminlogin-container button {
+        font-size: 14px;
+    }
+
+    .adminlogin-container input {
+        font-size: 14px;
+    }
+
+    #togglePassword {
+        font-size: 16px;
+    }
+
+    .adminlogo {
+        width: 25%; /* Adjust for smaller screens */
+        top: 10px;
+        left: 10px;
+    }
+}

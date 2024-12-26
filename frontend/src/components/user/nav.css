@@ -1,0 +1,68 @@
+/* Navbar.css */
+.navba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #7469B6;
+  color: #fff;
+}
+
+.navba-logo img {
+  height: 60px;
+}
+
+.navba-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navba-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem; /* Increased font size */
+  transition: color 0.3s ease;
+}
+
+.navba-links li a:hover {
+  color: #f0c040;
+}
+
+@media (max-width: 768px) {
+  .navba-links {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #7469B6;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .navba-links.active {
+    display: flex;
+  }
+}
+
+.navba-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navba-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navba-toggle {
+    display: flex;
+  }
+}

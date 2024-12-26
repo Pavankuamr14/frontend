@@ -1,0 +1,161 @@
+.decider-body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111112;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.decide-image-container {
+  margin-bottom: 20px;
+}
+
+.decide-center-image {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.decide-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5e35b1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.decide-role-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.decide-role-option {
+  display:flex;
+/* Push checkbox to left and text to the center */
+  align-items: center; /* Vertically align checkbox and text */
+  width: 160px;
+  height: auto;
+  padding: 4px;
+  border: 2px solid #c9b7ee;
+  border-radius: 8px;
+  background-color: #f8f3ff;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5e35b1;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.decide-role-option input[type='checkbox'] {
+  transform: scale(1.2);
+  
+}
+/* Add this in your decide.css */
+
+.go-back-icon {
+  position: absolute;
+  top: 20px;  /* Position from top */
+  left: 20px; /* Position from left */
+  cursor: pointer;
+}
+
+
+.decide-role-option input {
+  
+  cursor: pointer;
+  
+}
+
+.decide-role-option:hover {
+  background-color: #e2d7ff;
+  box-shadow: 0 4px 8px rgba(94, 53, 177, 0.2);
+}
+.decider{
+  text-align: center;
+  margin-left: 23%;
+}
+
+
+
+.decide-submit-button {
+  background-color: #7c4dff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-left: 40%;
+  width: 20%;
+}
+
+.decide-submit-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(124, 77, 255, 0.3);
+}
+
+.decide-submit-button:active {
+  transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .decide-page {
+    padding: 15px;
+    
+  }
+
+  .decide-heading {
+    font-size: 20px;
+  }
+
+  .decide-role-option {
+    font-size: 16px;
+  }
+
+  .decide-submit-button {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .decide-center-image {
+    max-width: 200px;
+  }
+
+  .decide-heading {
+    font-size: 18px;
+  }
+
+  .decide-role-option {
+    font-size: 14px;
+  }
+
+  .decide-submit-button {
+    font-size: 12px;
+    padding: 6px 12px;
+    width: 46%;
+    margin-left: 27%;
+  }
+}

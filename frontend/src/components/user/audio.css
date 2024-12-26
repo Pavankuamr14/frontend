@@ -1,0 +1,115 @@
+/* App.css */
+.audio body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .audiocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .audiocard {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .audiocard h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .audiocard label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .audiocard input,
+  .audiocard select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .audiorecord-section {
+    margin-bottom: 15px;
+  }
+  
+  .audiorecord-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .audiorecord-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .audiosubmit-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .audiosubmit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .audiorules ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .audiorules li {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .audiocontainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .audiocard {
+      width: 90%;
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .audiocard {
+      padding: 15px;
+    }
+  
+    .audiorecord-btn,
+    .audiosubmit-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  
